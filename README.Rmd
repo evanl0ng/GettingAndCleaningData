@@ -1,0 +1,28 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Course Project - Getting and Cleaning Data
+
+## Overview
+
+This repository contains the code and outputs for the Johns Hopkins Coursera "Getting and Cleaning Data" course project. The goal of this project was to clean and summarize data from the UCI Human Activity Recognition dataset using smartphones.
+
+## Files
+
+- run_analysis.R: Script that performs the analysis and creates the tidy dataset
+- tidy_dataset.txt: The final tidy data set, used for submission
+- CodeBook.md: Describes the variables and transformations used in the project
+- README.md: This document, which provides more detail on how everything fits together
+
+## Steps Performed
+
+1. Downloaded and unzipped the dataset.
+2. Loaded and merged training and test datasets.
+3. Extracted measurements on the mean and standard deviation.
+4. Used descriptive activity names and labeled data with readable variable names.
+5. Created a new tidy dataset with the average of each variable for each subject and activity.
+
+## How to Reproduce Analysis
+
+To reproduce the analysis, run run_analysis.R in an R environment. Make sure the UCI HAR Dataset folder is in your working directory, otherwise the file paths won't work.

@@ -1,0 +1,38 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# CodeBook
+
+## Source of the Data
+
+The original data comes from the UCI Human Activity Recognition Using Smartphones Dataset which can be accessed here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+## Description of Variables
+
+The tidy data set includes the following variables:
+
+- subject: An integer identifying each participant, numbered 1 through 30.
+- activity: The type of activity performed, with descriptive values:
+  - WALKING
+  - WALKING_UPSTAIRS
+  - WALKING_DOWNSTAIRS
+  - SITTING
+  - STANDING
+  - LAYING
+- Remaining variables: The average of each mean or standard deviation measurement for each subject-activity pair, e.g.:
+  - tBodyAcc-mean()-X
+  - tBodyGyro-std()-Z
+  - etc.
+
+These are derived from 561 raw features. Only those with “mean()” or “std()” in the name were retained.
+
+## Transformations Performed
+
+As described in the comments in the code and the project instructions...
+
+1. Merged the training and test sets into one data set.
+2. Extracted only the measurements on the mean and standard deviation.
+3. Labeled the activities with descriptive names.
+4. Cleaned variable names for clarity.
+5. Created a tidy data set that contains the average of each variable for each subject and activity.
