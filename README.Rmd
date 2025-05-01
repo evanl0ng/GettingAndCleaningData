@@ -25,4 +25,6 @@ This repository contains the code and outputs for the Johns Hopkins Coursera "Ge
 
 ## How to Reproduce Analysis
 
+Use the link provided here or in the codebook (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) to download and unzip the file in the same directory as the R code.
+
 To reproduce the analysis, run run_analysis.R in an R environment. Make sure the UCI HAR Dataset folder is in your working directory, otherwise the file paths won't work.
